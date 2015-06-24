@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nipun1</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="templatemo_container">
+<!-- banner -->
+    <%= render :partial => "registrations/banner" %>
+    <!-- menu -->
+    <%= render partial: "registrations/menu" %>
+	<div id="templatemo_content_wrapper">
+    	<div id="templatemo_content">
+    
+    	<!-- left -->
+        <%= render partial: "registrations/left" %>
+        <div class="column_w430 fl vl_divider">
+        	<%= yield %>                    
+        	<div class="cleaner"></div>        
+        </div> <!-- end of a column -->
+        
+       <!-- right -->
+        <%= render partial: "registrations/right" %>
+        <div class="margin_bottom_20 h_divider"></div>        
+        <div class="margin_bottom_20"></div>
+        <%= render partial: "registrations/footer" %>
+        </body>
+</html>

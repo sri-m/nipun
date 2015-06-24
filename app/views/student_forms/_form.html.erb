@@ -1,0 +1,15 @@
+<%= semantic_form_for @student_form do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :name, :input_html => { :size => 20 } %>
+    <%= f.input :email, :input_html => { :size => 20 } %>
+    <%= f.input :cell, :input_html => { :size => 20 } %>
+    <%= f.input :gender, :as => :radio, :collection => [:Male, :Female], :label => "Sex" %>
+    <%= f.input :group,  :as => :select, :collection => Order.pluck(:ord_name) %>
+    <%= f.input :options, :as => :check_boxes, :collection => [:option1, :option2, :option3] %>
+    <%= f.input :subject, :input_html => { :class => 'autogrow', :rows => 10, :cols => 20, :maxlength => 10  } %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  supplier_id: MyString
+  acc_no: MyString
+  acc_bal: MyString
+  acc_type: MyString
+  branch: MyString
+
+two:
+  supplier_id: MyString
+  acc_no: MyString
+  acc_bal: MyString
+  acc_type: MyString
+  branch: MyString
